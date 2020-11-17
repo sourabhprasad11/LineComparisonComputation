@@ -44,6 +44,15 @@ public class App
     		System.out.println( "Line 1 is not equals to Line 2" );
     	 
 	}
+	public void compareLines(double l1, double l2) {
+		if(l1==l2) {
+    		System.out.println( "Length of line 1 is equals Length of line 2" );
+    	}
+    	else if(l1>l2)
+    		System.out.println( "Line 1 is greater than Line 2" );
+    	else if(l1<l2)
+    		System.out.println( "Line 2 is greater than Line 1" );
+	}
     public static void main( String[] args )
     {
     	App app_object= new App();
@@ -62,6 +71,6 @@ public class App
     	double length2=(double) app_object.CalculateLength(x11,x21,y21,y22);
     	
     	app_object.checkEquality(length1,length2);
-    	
+    	app_object.compareLines(length1, length2);
     }
 }
